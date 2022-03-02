@@ -1,0 +1,30 @@
+1.LIST FLATTEN -[1, 6, [2, 3[1, 2, [1, 2]]], 4,[989898,2,3,[9,0,0,[9,0]]], [5, [6, [7, [1,2, [1, 2]]]]]]
+2.
+3.Lateral View and Explode - If give 2 columns you have to convert 2nd col in one col as list .
+4.Lit function and broadcast - complex question -- https://www.youtube.com/watch?v=RO57k3UmeMM 
+5.collect() vs show()
+6. show() vs where() -- 
+7.log4j -version 2.6  spark - important - 
+8. multiple delimeter in csv file --- ex- name,id,gender|dept|date of birth
+		df1= df.load.csv.option('delimeter',",)
+		show()
+		name id gender|dept|dateofbirth
+		df2 = df1.withcolumns(gender|dept|dateofbirth.split('|)[0] as gender)
+				.withcolumns(gender|dept|dateofbirth.split('|)[1] as dept)
+				..withcolumns(gender|dept|dateofbirth.split('|)[2] as dept)
+				
+				
+9. Why RDD kept immutable impact - obeject in python leteral are immutable 
+10.pyhton array how its is defined .
+11. yield - 
+11.https://www.geeksforgeeks.org/use-yield-keyword-instead-return-keyword-python/
+	https://www.guru99.com/python-yield-return-generator.html
+
+12 Spark adaptive query execution
+13. In which scenerio to use RDD, DF , DataSet
+
+
+1. Get the count of words in each line
+2. MultiDeliminitor CSV file load and remove/archeive bad record
+3. 
+1. COMPLEX NESTED JSON FLATEEN --https://www.youtube.com/watch?v=jD8JIw1FVVg
